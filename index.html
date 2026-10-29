@@ -1,0 +1,104 @@
+<!--
+  ======================================================================
+  INSTITUCIÓN: CBTis 166 Pablo Torres Burgos
+  ----------------------------------------------------------------------
+  * Estudiante: Carbajal Rodriguez Daniel Asael
+  * Grupo: 3B PRO VESP  
+  * Actividad: Portal de Acceso a Ecosistema de Desarrollo Cloud
+  ====================================================================== -->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acceso - DevCore Cloud Platform</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Contenedor principal que divide la pantalla en dos mitades -->
+    <div class="portal-container">
+
+        <!-- LADO IZQUIERDO: Panel de Marca Estilo Plataforma Cloud / DevSecOps -->
+        <div class="portal-brand-side">
+            <div class="brand-content">
+                
+                <!-- Insignia superior -->
+                <div class="brand-badge">
+                    <span class="badge-dot"></span> Infraestructura & Despliegue Global
+                </div>
+
+                <div class="brand-logo-large">
+                    <span class="logo-icon">⚡</span>
+                    <h1>DevCore <span>Cloud</span></h1>
+                </div>
+                
+                <p class="brand-tagline">
+                    Plataforma de alto rendimiento para compilación en la nube, gestión de contenedores y despliegue continuo en entornos de producción seguros.
+                </p>
+
+                <!-- Tarjetas pequeñas de características (Estilo DevOps / Cloud) -->
+                <div class="brand-features">
+                    <div class="feature-item">
+                        <div class="feature-icon">🛡️</div>
+                        <div>
+                            <h4>Seguridad Zero-Trust</h4>
+                            <p>Autenticación multifactor y cifrado de extremo a extremo.</p>
+                        </div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">🚀</div>
+                        <div>
+                            <h4>CI/CD Automatizado</h4>
+                            <p>Despliegues en milisegundos con contenedores aislados.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- LADO DERECHO: Tarjeta del Formulario de Inicio de Sesión -->
+        <div class="portal-form-side">
+            <div class="login-card">
+                
+                <div class="login-header">
+                    <h2>Panel de Acceso</h2>
+                    <p>Inicie sesión con sus credenciales de desarrollador</p>
+                </div>
+
+                <!-- Formulario de Inicio de Sesión -->
+                <form id="form-login" action="/dashboard" method="POST">
+                    
+                    <div class="input-group">
+                        <label for="email">Correo o ID de Desarrollador</label>
+                        <input type="email" id="email" name="email" placeholder="dev@devcore.io" required>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="password">Contraseña de Acceso</label>
+                        <input type="password" id="password" name="password" placeholder="••••••••" required>
+                    </div>
+
+                    <div class="form-actions-help">
+                        <a href="recuperar.html" class="forgot-link">¿Restablecer credenciales?</a>
+                    </div>
+
+                    <button type="submit" class="btn-submit">Autorizar Acceso</button>
+
+                </form>
+
+                <!-- Pie de tarjeta con opción de registro -->
+                <div class="login-footer">
+                    <p>¿Sin credenciales de acceso? <a href="registro.html">Solicitar cuenta root</a></p>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
